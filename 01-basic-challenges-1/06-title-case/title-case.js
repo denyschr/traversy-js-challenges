@@ -1,8 +1,7 @@
 function titleCase(str) {
-	return str
-		.split(' ')
-		.map(word => word.charAt(0).toUpperCase() + word.substring(1).toLowerCase())
-		.join(' ');
+  return str
+    .toLowerCase()
+    .replace(/(?<=^|\s)[a-z]/gi, (match) => match.toUpperCase());
 }
 
 module.exports = titleCase;
