@@ -1,5 +1,5 @@
 function validateEmail(email) {
-  return /^[a-zA-Z0-9+._-]+@[a-zA-Z.-]+\.[a-z]{2,3}$/g.test(email);
+  return /^[a-z0-9+._-]+@[a-z.-]+\.[a-z]{2,3}$/i.test(email);
 }
 
 module.exports = validateEmail;
